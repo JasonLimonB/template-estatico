@@ -1,0 +1,634 @@
+@import url(fonts.css);
+@import url(all.min.css);
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "SourceSansPro", sans-serif;
+}
+
+
+/* Estilos de header y menú */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fcfcfc;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #E1E2E2;
+    background: #fff;
+    z-index: 10;
+}
+
+.header::before,
+.header::after {
+    content: '';
+    width: 10%;
+}
+
+.cont_logo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.cont_logo img {
+    width: 140px;
+}
+
+.menuResponsive {
+    display: none;
+}
+
+.menu {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #53575A;
+    /* color: #848388; */
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all ease 0.2s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    color: #fff;
+    border: 1px solid #251a9b;
+    background: #2b1faf;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+
+/* Fin estilos de header y menú */
+
+
+/* Estilos del banner */
+
+.banner {
+    padding-top: 70px;
+    background: url(../img/banner3.jpg) #55479C;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+    margin-bottom: 50px;
+}
+
+
+/* Fin de estilos del banner */
+
+
+/* Apartade Nosotros */
+
+.nosotros_titulo p {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #535353;
+}
+
+.nosotros_contenedor {
+    width: 100%;
+    display: flex;
+}
+
+.des {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descripcion {
+    width: 70%;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.26);
+    background: #fff;
+}
+
+.descripcion p {
+    font-family: SourceLight;
+    padding: 5px;
+}
+
+.wallpaper_nosotros {
+    width: 40%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallpaper_nosotros img {
+    width: 400px;
+}
+
+
+/* Fin apartado nosotros */
+
+
+/* Galeria estilos */
+
+.galeria {
+    width: 100%;
+}
+
+.galeria_titulo {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: #535353;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.galeria_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.galeria .galeria_contenedor img {
+    width: 400px;
+    height: 300px;
+    transition: all ease 0.4s;
+}
+
+.galeria .galeria_contenedor img:hover {
+    transform: scale(1.1, 1.1);
+    transition: all ease 0.4s;
+}
+
+
+/* Fin de estilos de galeria */
+
+
+/* Uso de tecnologias */
+
+.tec {
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.tec::after,
+.tec::before {
+    content: '';
+    width: 7%;
+}
+
+.img_tec {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img_tec img {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+
+.tec_desc {
+    width: 50%;
+}
+
+.titulo_desc {
+    color: #535353;
+    font-size: 30px;
+    margin-top: 8%;
+}
+
+.tec_desc p {
+    padding: 15px 0px;
+    color: #535353;
+}
+
+
+/* Fin de uso de tecnologias */
+
+
+/* Contacto */
+
+.titulo_contacto {
+    font-size: 25px;
+    color: #535353;
+    margin-top: 100px;
+    margin-left: 11%;
+    margin-bottom: 30px;
+}
+
+.contacto {
+    width: 100%;
+    display: flex;
+}
+
+.formulario {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.formulario .cont_form {
+    width: 70%;
+}
+
+.input {
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+    padding: 20px 20px;
+    border: 1px solid #AFABD4;
+    border-radius: 3px;
+    font-family: "SourceSansPro", sans-serif;
+    color: #535353;
+    transition: all ease 0.3s;
+    background: #fdfdfd;
+    box-shadow: inset 0 0 3px 0px #D9D9D9;
+}
+
+.textarea {
+    width: 80%;
+    height: 100px;
+    min-width: 80%;
+    max-width: 20%;
+    min-height: 100px;
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+
+.input:focus {
+    border: 1px solid #1B1464;
+    transition: all ease 0.3s;
+}
+
+.btn {
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    background: #f9f9f9;
+    cursor: pointer;
+    margin-left: 20%;
+    border: none;
+    color: #696969;
+    border: 1px solid #55479C;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2B1FAF;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.mensaje_contacto {
+    width: 50%;
+}
+
+.mensaje_contacto img {
+    width: 300px;
+}
+
+
+/* Fin contacto */
+
+
+/* Footer */
+
+footer {
+    background: #383838;
+    height: 300px;
+    display: flex;
+}
+
+.titulo_footer {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: SourceBold;
+}
+
+.dev {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 70px;
+}
+
+.dev p {
+    line-height: 200%;
+}
+
+.redes {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.redes_cont {
+    color: #fff;
+    text-align: right;
+    padding-right: 150px;
+}
+
+.redes_sociales {
+    font-size: 25px;
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes_sociales>* {
+    color: #706f6f;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.redes_sociales>*:hover {
+    color: #fff;
+}
+
+.face:hover {
+    background: #3B5998;
+}
+
+.twit:hover {
+    background: #1DA1F2;
+}
+
+.insta:hover {
+    background: #DA1B8F;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Fin fo footer */
+
+
+/* --------------------Media Querys para responsive-------------------- */
+
+@media screen and (max-width: 1023px) {
+    /* Aqui realizamos la animacion del menu junto a sus estilos */
+    .menu {
+        position: absolute;
+        margin-top: 70px;
+        height: 300px;
+        width: 30%;
+        background: #fff;
+        display: block;
+        box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
+        transition: all ease 0.5s;
+        margin-left: 0;
+        overflow: hidden;
+        transform: translateX(0);
+    }
+    /* Esta clase tiene esa propiedad y que si no la tubira el menu no estaria oculto
+        asi que la asiganamos de una vez en el html y con Javascript la quitamos para que
+        se muestre el menu.
+        NOTA: Esta clase deberá estar debajo de los estilos de la caja del menu para que funcione
+    */
+    .mostrar {
+        transform: translateX(-105%);
+    }
+    .menu ul {
+        margin-top: 30px;
+    }
+    .menu ul li {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+        transition: all ease 0.5s;
+    }
+    .menu ul li:hover {
+        background: #251a9b;
+        transition: all ease 0.5s;
+    }
+    .menu ul li a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 15px 20px;
+    }
+    .menu ul li a:hover {
+        border-radius: 0px;
+        margin-left: 10px;
+        background: transparent;
+        color: #fff;
+        border: 1px solid transparent;
+    }
+    /* Aqui realizamos la animacion del menu junto a sus estilos */
+    .banner {
+        height: 500px;
+    }
+    .menuResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        height: 100%;
+    }
+    .menu_posicion {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transform: translateX(-100%);
+    }
+    /* Aqui dibujamos el menú hamburguesa */
+    .menu_dibujo {
+        width: 28px;
+        height: 4px;
+    }
+    .menu_dibujo,
+    .menu_dibujo::before,
+    .menu_dibujo::after {
+        background: #262B34;
+        border-radius: 4px;
+    }
+    .menu_dibujo::before,
+    .menu_dibujo::after {
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: 33px;
+    }
+    .menu_dibujo::after {
+        margin-top: 9px;
+    }
+    .menu_dibujo::before {
+        margin-top: -9px;
+    }
+    .descripcion {
+        width: 100%;
+    }
+    .galeria .galeria_contenedor img {
+        width: 300px;
+        height: 200px;
+        transition: all ease 0.4s;
+    }
+    .galeria .galeria_contenedor img:hover {
+        transform: scale(1.1, 1.1);
+        transition: all ease 0.4s;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .menu {
+        width: 50%;
+    }
+    .banner {
+        height: 450px;
+    }
+    .descripcion {
+        width: 100%;
+    }
+    .nosotros_contenedor {
+        display: block;
+        margin-bottom: 0;
+    }
+    .des {
+        width: 100%;
+    }
+    .wallpaper_nosotros {
+        display: block;
+        width: 100%;
+        margin-bottom: -300px;
+    }
+    .wallpaper_nosotros img {
+        width: 300px;
+        margin-left: 20%;
+    }
+    .tec {
+        display: block;
+        margin-top: 50px;
+    }
+    .tec_desc {
+        width: 50%;
+        margin-left: 20%;
+    }
+    .img_tec {
+        width: 100%;
+    }
+    .mensaje_contacto img {
+        display: none;
+    }
+    .formulario {
+        width: 400%;
+    }
+    footer {
+        height: auto;
+        display: block;
+    }
+    .dev {
+        width: 100%;
+    }
+    .redes {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .redes_cont {
+        color: #fff;
+        text-align: right;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+        width: 70%;
+    }
+    .banner {
+        height: 400px;
+    }
+    .header {
+        width: 100%;
+    }
+    .header::before,
+    .header::after {
+        content: '';
+        width: 5%;
+    }
+    .header::after {
+        content: '';
+        width: 1%;
+    }
+    .wallpaper_nosotros img {
+        width: 200px;
+        margin-left: 10%;
+    }
+    .tec_desc {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .tec_desc {
+        width: 80%;
+    }
+    .titulo_desc {
+        font-size: 20px;
+    }
+    .img_tec img {
+        width: 300px;
+        height: 200px;
+    }
+    .btn {
+        margin-left: 5%;
+    }
+}
+
+
+/* --------------------Fin media Querys para responsive-------------------- */
